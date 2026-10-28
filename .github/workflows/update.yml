@@ -1,0 +1,71 @@
+name: 청년 뉴스 수집·배포
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # 매시간 7분에 실행
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "실행 방식"
+        type: choice
+        options:
+          - 수집
+          - 연결점검
+        default: 수집
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: youth-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: 저장소 가져오기
+        uses: actions/checkout@v7
+
+      - name: 기사 수집
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          MODE: ${{ inputs.mode }}
+        run: |
+          if [ "$MODE" = "연결점검" ]; then
+            python3 scripts/collect.py --diagnose
+          else
+            python3 scripts/collect.py
+          fi
+
+      - name: 데이터 저장
+        if: always() && inputs.mode != '연결점검'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A docs/data
+          if git diff --cached --quiet; then
+            echo "바뀐 데이터 없음"
+          else
+            git commit -q -m "데이터 갱신 $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
+            git pull -q --rebase origin "${GITHUB_REF_NAME}" || true
+            git push -q origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: 사이트 파일 준비
+        if: always() && inputs.mode != '연결점검'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: docs
+
+      - name: 사이트 배포
+        id: deploy
+        if: always() && inputs.mode != '연결점검'
+        uses: actions/deploy-pages@v5
