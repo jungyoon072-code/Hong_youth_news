@@ -1,0 +1,11 @@
+{
+ "updated": null,
+ "site_title": "청년 뉴스 댓글 랭킹",
+ "title_keywords": ["청년"],
+ "track_days": 7,
+ "reaction_order": ["touched", "useful", "wow", "analytical", "recommend"],
+ "reaction_labels": {"touched": "공감", "useful": "쏠쏠", "wow": "흥미", "analytical": "분석", "recommend": "후속"},
+ "reaction_names": {"touched": "공감백배", "useful": "쏠쏠정보", "wow": "흥미진진", "analytical": "분석탁월", "recommend": "후속강추"},
+ "days": {},
+ "status": {"level": "pending", "message": "아직 첫 수집 전입니다. 설치 안내서의 마지막 단계(첫 실행)를 진행해 주세요.", "at": null, "stats": {}, "errors": []}
+}
