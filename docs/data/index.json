@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T11:45:47+09:00",
+ "updated": "2026-10-28T16:13:46+09:00",
  "site_title": "청년 뉴스 댓글 랭킹",
  "title_keywords": [
   "청년"
@@ -28,12 +28,12 @@
  },
  "days": {
   "2026-10-28": {
-   "count": 74,
-   "comments": 69
+   "count": 126,
+   "comments": 124
   },
   "2026-10-27": {
    "count": 171,
-   "comments": 572
+   "comments": 581
   },
   "2026-10-26": {
    "count": 144,
@@ -47,30 +47,23 @@
  "status": {
   "level": "ok",
   "message": "정상",
-  "at": "2026-10-28T11:45:47+09:00",
+  "at": "2026-10-28T16:13:46+09:00",
   "stats": {
-   "search_calls": 91,
-   "search_items": 9099,
-   "naver_items": 2935,
-   "matched": 397,
-   "new": 397,
-   "refreshed": 397,
-   "comment_ok": 397,
+   "search_calls": 56,
+   "search_items": 5600,
+   "naver_items": 1631,
+   "matched": 109,
+   "new": 52,
+   "refreshed": 449,
+   "comment_ok": 449,
    "comment_fail": 0,
    "comment_fail_new": 0,
-   "like_ok": 397,
+   "like_ok": 449,
    "like_fail": 0,
-   "page_fetches": 61,
-   "http_requests": 617,
-   "seconds": 485.3
+   "page_fetches": 5,
+   "http_requests": 535,
+   "seconds": 151.8
   },
-  "errors": [
-   "기사 페이지 421/0009254781: HTTP 0",
-   "기사 페이지 417/0001162347: HTTP 0",
-   "기사 페이지 374/0000540163: HTTP 0",
-   "기사 페이지 422/0000919623: HTTP 0",
-   "기사 페이지 660/0000120043: HTTP 0",
-   "기사 페이지 002/0002462964: HTTP 0"
-  ]
+  "errors": []
  }
 }
