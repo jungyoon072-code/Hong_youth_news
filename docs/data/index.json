@@ -1,11 +1,76 @@
 {
- "updated": null,
+ "updated": "2026-10-28T11:45:47+09:00",
  "site_title": "청년 뉴스 댓글 랭킹",
- "title_keywords": ["청년"],
+ "title_keywords": [
+  "청년"
+ ],
  "track_days": 7,
- "reaction_order": ["touched", "useful", "wow", "analytical", "recommend"],
- "reaction_labels": {"touched": "공감", "useful": "쏠쏠", "wow": "흥미", "analytical": "분석", "recommend": "후속"},
- "reaction_names": {"touched": "공감백배", "useful": "쏠쏠정보", "wow": "흥미진진", "analytical": "분석탁월", "recommend": "후속강추"},
- "days": {},
- "status": {"level": "pending", "message": "아직 첫 수집 전입니다. 설치 안내서의 마지막 단계(첫 실행)를 진행해 주세요.", "at": null, "stats": {}, "errors": []}
+ "reaction_order": [
+  "touched",
+  "useful",
+  "wow",
+  "analytical",
+  "recommend"
+ ],
+ "reaction_labels": {
+  "touched": "공감",
+  "useful": "쏠쏠",
+  "wow": "흥미",
+  "analytical": "분석",
+  "recommend": "후속"
+ },
+ "reaction_names": {
+  "touched": "공감백배",
+  "useful": "쏠쏠정보",
+  "wow": "흥미진진",
+  "analytical": "분석탁월",
+  "recommend": "후속강추"
+ },
+ "days": {
+  "2026-10-28": {
+   "count": 74,
+   "comments": 69
+  },
+  "2026-10-27": {
+   "count": 171,
+   "comments": 572
+  },
+  "2026-10-26": {
+   "count": 144,
+   "comments": 1282
+  },
+  "2026-10-25": {
+   "count": 8,
+   "comments": 86
+  }
+ },
+ "status": {
+  "level": "ok",
+  "message": "정상",
+  "at": "2026-10-28T11:45:47+09:00",
+  "stats": {
+   "search_calls": 91,
+   "search_items": 9099,
+   "naver_items": 2935,
+   "matched": 397,
+   "new": 397,
+   "refreshed": 397,
+   "comment_ok": 397,
+   "comment_fail": 0,
+   "comment_fail_new": 0,
+   "like_ok": 397,
+   "like_fail": 0,
+   "page_fetches": 61,
+   "http_requests": 617,
+   "seconds": 485.3
+  },
+  "errors": [
+   "기사 페이지 421/0009254781: HTTP 0",
+   "기사 페이지 417/0001162347: HTTP 0",
+   "기사 페이지 374/0000540163: HTTP 0",
+   "기사 페이지 422/0000919623: HTTP 0",
+   "기사 페이지 660/0000120043: HTTP 0",
+   "기사 페이지 002/0002462964: HTTP 0"
+  ]
+ }
 }
