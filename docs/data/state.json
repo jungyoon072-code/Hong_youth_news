@@ -1,29 +1,29 @@
 {
  "last_run": {
-  "at": "2026-10-30T06:03:32+09:00",
+  "at": "2026-10-30T06:07:11+09:00",
   "errors": [],
   "level": "ok",
   "message": "정상",
   "stats": {
    "comment_fail": 0,
    "comment_fail_new": 0,
-   "comment_ok": 504,
-   "http_requests": 540,
+   "comment_ok": 1,
+   "http_requests": 12,
    "like_fail": 0,
-   "like_ok": 504,
-   "matched": 35,
-   "naver_items": 451,
-   "new": 6,
+   "like_ok": 1,
+   "matched": 36,
+   "naver_items": 474,
+   "new": 1,
    "page_fetches": 0,
-   "refreshed": 504,
+   "refreshed": 1,
    "search_calls": 10,
    "search_items": 1000,
-   "seconds": 98.7
+   "seconds": 16.5
   }
  },
- "last_search_ok": "2026-10-30T06:03:32+09:00",
+ "last_search_ok": "2026-10-30T06:07:11+09:00",
  "like_cid_fmt": "ne_{oid}_{aid}",
- "like_mode": "comma",
+ "like_mode": "single",
  "like_service": "NEWS",
  "press": {
   "001": "연합뉴스",
