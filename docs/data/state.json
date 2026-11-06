@@ -1,27 +1,27 @@
 {
  "last_run": {
-  "at": "2026-11-06T22:07:12+09:00",
+  "at": "2026-11-06T23:07:13+09:00",
   "errors": [],
   "level": "ok",
   "message": "정상",
   "stats": {
    "comment_fail": 0,
    "comment_fail_new": 0,
-   "comment_ok": 368,
-   "http_requests": 399,
+   "comment_ok": 449,
+   "http_requests": 484,
    "like_fail": 0,
-   "like_ok": 368,
-   "matched": 29,
-   "naver_items": 345,
+   "like_ok": 449,
+   "matched": 30,
+   "naver_items": 324,
    "new": 1,
    "page_fetches": 0,
-   "refreshed": 368,
+   "refreshed": 449,
    "search_calls": 12,
    "search_items": 1200,
-   "seconds": 68.2
+   "seconds": 74.3
   }
  },
- "last_search_ok": "2026-11-06T22:07:12+09:00",
+ "last_search_ok": "2026-11-06T23:07:13+09:00",
  "like_cid_fmt": "ne_{oid}_{aid}",
  "like_mode": "comma",
  "like_service": "NEWS",
