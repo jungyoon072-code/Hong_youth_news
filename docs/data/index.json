@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T16:07:15+09:00",
+ "updated": "2026-11-25T17:07:16+09:00",
  "site_title": "청년 뉴스 댓글 랭킹",
  "title_keywords": [
   "청년"
@@ -28,12 +28,12 @@
  },
  "days": {
   "2026-11-25": {
-   "count": 133,
-   "comments": 641
+   "count": 143,
+   "comments": 709
   },
   "2026-11-24": {
    "count": 168,
-   "comments": 143
+   "comments": 148
   },
   "2026-11-23": {
    "count": 175,
@@ -53,7 +53,7 @@
   },
   "2026-11-19": {
    "count": 127,
-   "comments": 537
+   "comments": 538
   },
   "2026-11-18": {
    "count": 207,
@@ -159,22 +159,22 @@
  "status": {
   "level": "ok",
   "message": "정상",
-  "at": "2026-11-25T16:07:15+09:00",
+  "at": "2026-11-25T17:07:16+09:00",
   "stats": {
-   "search_calls": 37,
-   "search_items": 3700,
-   "naver_items": 1079,
-   "matched": 68,
-   "new": 17,
-   "refreshed": 180,
-   "comment_ok": 180,
+   "search_calls": 43,
+   "search_items": 4300,
+   "naver_items": 1235,
+   "matched": 82,
+   "new": 10,
+   "refreshed": 424,
+   "comment_ok": 424,
    "comment_fail": 0,
    "comment_fail_new": 0,
-   "like_ok": 180,
+   "like_ok": 424,
    "like_fail": 0,
    "page_fetches": 0,
-   "http_requests": 226,
-   "seconds": 79.6
+   "http_requests": 489,
+   "seconds": 109.9
   },
   "errors": []
  }
